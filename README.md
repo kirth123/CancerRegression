@@ -17,6 +17,25 @@ The repository includes the local dataset files:
 - `cancer-regression.csv`
 - `avg-household-size.csv`
 
+## Directory structure
+
+The project files are stored in the repository root, so run the commands from
+`D:\projects\cancerregression` or change to that directory first:
+
+```text
+cancerregression/
+├── .venv/                    # Optional Python virtual environment
+├── avg-household-size.csv    # Household size data
+├── cancer-regression.csv     # Cancer and demographic data
+├── cancerregression.html     # Exported notebook view
+├── cancerregression.ipynb    # Jupyter notebook
+├── benchmark_models.py       # Train and compare regression models
+├── fix_notebook.py           # Notebook maintenance utility
+├── update_notebook.py        # Notebook update utility
+├── verify_models.py          # Verify model results
+└── README.md                 # Project documentation
+```
+
 ## Files
 
 - `benchmark_models.py` - trains and evaluates a set of regression models on the merged dataset.
