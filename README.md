@@ -19,20 +19,15 @@ The repository includes the local dataset files:
 
 ## Directory structure
 
-The project files are stored in the repository root, so run the commands from
-`D:\projects\cancerregression` or change to that directory first:
+All project files are stored in the repository root:
 
 ```text
 cancerregression/
-├── .venv/                    # Optional Python virtual environment
-├── avg-household-size.csv    # Household size data
-├── cancer-regression.csv     # Cancer and demographic data
-├── cancerregression.html     # Exported notebook view
-├── cancerregression.ipynb    # Jupyter notebook
-├── benchmark_models.py       # Train and compare regression models
-├── fix_notebook.py           # Notebook maintenance utility
-├── update_notebook.py        # Notebook update utility
-├── verify_models.py          # Verify model results
+├── .venv/                    # Optional virtual environment
+├── *.csv                     # Input datasets
+├── *.py                      # Python scripts
+├── *.ipynb                   # Jupyter notebooks
+├── *.html                    # Exported notebook files
 └── README.md                 # Project documentation
 ```
 
@@ -65,15 +60,15 @@ pip install pandas numpy scikit-learn xgboost
 Run the benchmark script:
 
 ```powershell
-cd /d D:\projects\cancerregression
-python benchmark_models.py
+cd path/to/your/cancerregression
+python .\benchmark_models.py
 ```
 
 Run the verification script:
 
 ```powershell
-cd /d D:\projects\cancerregression
-python verify_models.py
+cd path/to/your/cancerregression
+python .\verify_models.py
 ```
 
 ## Notes
